@@ -1,0 +1,231 @@
+<html>
+<head>
+<title>Roboworld.Info</title>
+<Script lanuage="JavaScript">
+function emailCheck(f1)
+{	
+	var i,j,k;
+	var t=new String();
+
+	t=f1.email.value;
+	i=t.indexOf("@");
+	j=t.indexOf(".");
+
+	if((i<0||j<0||i<3||j<i||i==0||j==0||j==i+1) || (i!=t.lastIndexOf("@")) || (j+1==t.lastIndexOf(".")) || 	(i==t.length-1) || (i==t.length-1) ||  (j==t.length-1))
+	{
+		f1.email.value="";
+		window.alert("Invalid Email Address");
+	}
+  }
+
+function nameCheck(f1)
+{
+      name = f1.name.value;
+     if ((name.indexOf('1') != -1) || (name.indexOf('2') != -1) || (name.indexOf('3') != -1) 
+        || (name.indexOf('4') != -1) || (name.indexOf('5') != -1) || (name.indexOf('6') != -1) || 
+        (name.indexOf('7') != -1) || (name.indexOf('8') != -1) || (name.indexOf('9') != -1) || 
+        (name.indexOf(')') != -1) || (name.indexOf('(') != -1) || (name.indexOf('*') != -1) || 
+        (name.indexOf('&') != -1) || (name.indexOf('^') != -1) || (name.indexOf('%') != -1) || 
+        (name.indexOf('$') != -1) || (name.indexOf('#') != -1) || (name.indexOf('@') != -1) || 
+        (name.indexOf('!') != -1) || (name.indexOf('0') != -1) || (name.indexOf('?') != -1) || 
+        (name.indexOf('.') != -1) || (name.indexOf(',') != -1) || (name.indexOf('>') != -1) || 
+        (name.indexOf('<') != -1) || (name.indexOf('"') != -1) || (name.indexOf(';') != -1) ||
+        (name.indexOf(':') != -1) || (name.indexOf('|') != -1) || (name.indexOf('}') != -1) || 
+        (name.indexOf('{') != -1) || (name.indexOf(']') != -1) || (name.indexOf('[') != -1) || 
+        (name.indexOf('_') != -1) || (name.indexOf('-') != -1) || (name.indexOf('=') != -1) || 
+        (name.indexOf('+') != -1)) 
+      {
+       	alert("Please Enter only character in name");
+	f1.name.value="";
+       	f1.name.focus();
+      }
+}
+
+function check(f)
+{
+if( (f.name.value=="") || (f.email.value=="") || (f.tel.value=="") || (f.fax.value=="") )
+        {
+	alert("PLEASE ENTER ALL THE REQUIRED FIELDS")
+        	 f.name.focus();
+         	return false; 
+         }
+         return true;
+ }
+
+function numcheck(f2)
+ { 
+	  if (isNaN(f2.tel.value)==true) 
+    	{ 
+		alert("Enter on Number")
+      		f2.tel.value=""
+      		f2.txtel.focus();
+   	 }
+  	str=f2.tel.value;
+	 l=str.length;
+  	if( l > 10 ) 
+  	 {
+		alert("Enter Proper Number")
+   		f2.tel.value=""
+  		 f2.txtel.focus();
+  	}
+  
+ }
+function faxcheck(f2)
+ { 
+  	if (isNaN(f2.fax.value)==true) 
+    	{ 
+		alert("Enter on Number")
+      		f2.fax.value=""
+     		 f2.fax.focus();
+   	 }
+  	str=f2.fax.value;
+	  l=str.length;
+  	if( l > 10 )
+  	 {
+		alert("Enter Proper Number")
+   		f2.fax.value=""
+  		 f2.fax.focus();
+ 	 }
+ }
+</Script>
+</head>
+
+<body bgcolor="#F3F3F3">
+<img src="Icon/logo2.jpg" width="93" height="135" align="left"> 
+<table width="963" height="121" border="0" cellpadding="0" cellspacing="0">
+  	<tr>
+    		<td width="1101" bgcolor="#000000">
+			<img src="Icon/robologo2.jpg" width="778" height="110" align="middle">
+		</td>
+  	</tr>
+  	<tr>
+   		 <td bgcolor="#000000">
+			<div align="center">	
+			<font size="4">
+			<img src="Icon/15.gif" width="34" height="34" border="0">
+			<img src="Icon/15.gif" width="34" height="34" border="0">
+			<img src="Icon/15.gif" width="34" height="34" border="0">
+			<img src="Icon/15.gif" width="34" height="34" border="0">
+			<a href="roboworld.html">
+			          <img src="Icon/linkhm.png" width="93" height="36" border="0">
+			</a>
+			<a href="robots.html">
+			          <img src="Icon/linkro.png" width="93" height="36" border="0">
+			</a>
+			<a href="sitemap.html">
+			         <img src="Icon/linksi.png" width="93" height="36" border="0">
+			</a>
+			<a href="about.html">
+			        <img src="Icon/liabout.png" width="93" height="36" border="0">
+			</a>
+			<a href="feedback.html">
+			       <img src="Icon/cooltext448183208MouseOver.png" width="93" 					          height="36" border="0">
+			</a>
+			<img src="Icon/15.gif" width="34" height="34">
+			<img src="Icon/15.gif" width="34" height="34">
+			<img src="Icon/15.gif" width="34" height="34">
+			<img src="Icon/15.gif" width="34" height="34">
+			</font>
+			</div>
+		</td>
+  	</tr>
+</table>
+<img src="Icon/Grey_line.gif" width="1061" height="8"> 
+	<div align="left"></div>
+	<table width="1090" height="832" border="0" cellpadding="0" cellspacing="0">
+ 	 <tr> 
+    	        <td width="226" height="832"><div align="left"> 
+        		<p><font size="5"><a href="roboworld.html"><img src="Icon/th_button_810.gif" width="86" 			height="39" border="0" align="middle"></a></font>
+		</p>
+       		 <p><font size="5"><a href="intro.html"><img src="Icon/linkin.png" width="153" 		height="45" border="0"></a></font><font size="5"><a href="robots.html"><img 		src="Icon/linkro.png" width="153" height="45" border="0"></a></font><a 		href="advantages.html"><img src="Icon/linkad.png" width="153" height="45" border="0"></a><a href="disadvantages.html"><img src="Icon/linkds.png" width="153" height="45" border="0"></a><a href="gallery.html"><img src="Icon/linkga.png" width="153" height="45" border="0"></a><a href="sitemap.html"><img src="Icon/linksi.png" width="153"height="45" border="0"></a><a href="about.html"><img src="Icon/liabout.png" width="155" height="45" border="0"></a><a href="feedback.html"><imgsrc="Icon/cooltext448183208MouseOver.png" width="153" height="45"border="0"></a></p>
+       		 <p>&nbsp;</p>
+        		<p>&nbsp;</p>
+       	 	<p>&nbsp;</p>
+       	 	<p>&nbsp;</p>
+       		 <p>&nbsp;</p>
+        		<p>&nbsp;</p>
+        		<p>&nbsp;</p>
+       	 	<p>&nbsp;</p>
+       	 	<p>&nbsp;</p>
+      	</div></td>
+    	<td width="77"><div align="left"></div></td>
+    	<td width="512"><p align="center"><font size="7" face="Times New Roman, Times, 	serif"><u><strong><font color="#666666">Your 
+       	 Suggestions</font><img src="Icon/alien_13_animated.gif" width="78" 	height="43"></strong></u></font></p>
+      	<form name="frm" method="Post" action="http:\\localhost\web-roboworld\feedback1.asp" >
+        <p><font size="4"><strong><em><font color="#666666">Tell us what you think 
+          about our web site,our services,<br>
+          our organization, or anything else that comes <br>
+          to mind.We welcome all of your comments and suggestions.</font></em></strong></font></p>
+        <p><font color="#666666" size="4"><strong>Did you get the information 
+          of what you looking for? </strong></font></p>
+        <p> <font color="#666666">
+          <input type="radio" name="messageType" value="yes">
+          Yes 
+          <input type="radio" name="messageType" value="no">
+          No </font></p>
+        <p><font color="#666666" size="4"><strong>What about us do you want to 
+          comment?</strong></font></p>
+        <p> <font color="#666666" size="4"> 
+          <select name="comment1" >
+            <option selected>Website</option>
+            <option>Services</option>
+            <option>Script</option>
+            <option>Other</option>
+          </select>
+          Other 
+          <input name="other" type="text" size="50" onChange=makeChar(document.Form1.txtComment);>
+          </font></p>
+        <p><font color="#666666" size="4"><strong>Enter your comment in space 
+          given below: </strong></font></p>
+        <p><font color="#666666" size="4"> 
+          <textarea name="briefComment" cols="60" rows=" 5" ></textarea>
+          </font></p>
+        <p><font color="#666666" size="4"><strong>Tell us how to get in touch 
+          with you?</strong></font></p>
+        <table width="383" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="68"><font color="#666666" size="4"><strong> Name:</strong> 
+              </font> </td>
+            <td width="315"><font color="#666666" size="4"> 
+              <input name="name" type="text" size="40" onKeyPress="nameCheck(frm);">
+              </font></td>
+          </tr>
+          <tr> 
+            <td><font color="#666666" size="4"><strong>Email:</strong> </font></td>
+            <td><font color="#666666" size="4"> 
+              <input name="email" type="text" size="40" onBlur="emailCheck(frm);">
+              </font></td>
+          </tr>
+          <tr> 
+            <td><font color="#666666" size="4"><strong>Tel: </strong> </font> 
+            </td>
+            <td><font color="#666666" size="4"> 
+              <input name="tel" type="text" size="40"  onBlur="numcheck(frm)";>
+              </font></td>
+          </tr>
+          <tr> 
+            <td><font color="#666666" size="4"><strong>Fax:</strong> </font> </td>
+            <td><font color="#666666" size="4"> 
+              <input name="fax" type="text" size="40" onBlur="faxcheck(frm)";>
+              </font></td>
+          </tr>
+        </table>
+        <pre><p align="center"><font color="#666666" size="4"> 
+        
+<input type="submit" name="Submit" value="Submit" onClick="return check(frm);">  <input type="reset" name="reset" value="Reset">
+</font></p>
+        </pre>
+        <center>
+          <p>&nbsp; </p>
+        </center>
+        <p>&nbsp; </p>
+      </form>
+      
+    </td>
+    <td width="275">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
